@@ -14,6 +14,7 @@ First step is to get the authentication cookie from host machine. Use the comman
 
 copy the generated cookie value.
 From your docker engine on the host machine, run the following command:
+
 ```docker run -i -t --net=host -e=DISPLAY --device /dev/snd -v /tmp/.X11-unix ubuntu bash```
 
 The command will create a container with ubuntu image and share X11 socket file with the container and also share sound(optional)
